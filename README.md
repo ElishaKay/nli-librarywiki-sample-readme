@@ -42,15 +42,12 @@ https://www.jetbrains.com/pycharm/download/#section=windows
 # Get the latest snapshot
 git clone https://github.com/AdirShemesh/LibraryWiki/
 
-# Install Dependencies via Pycharm IDE
+```
+
+Install Dependencies via Pycharm IDE
 
 <img src="pycharm.png">
 
-# Install Dependencies via Pycharm IDE
-
-
-
-```
 
 
 <hr>
