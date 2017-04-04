@@ -1,4 +1,4 @@
-Welcome friends to the Github Repo of LibraryWiki project.
+Welcome friends to the Github Repo of the LibraryWiki project.
 
 A live demo is available here: http://84.95.208.20:14180/index.php/000017959
 
@@ -20,7 +20,10 @@ Features
 --------
 
 
-- **Wikimedia GUI** of the National Library of Israel's extensive Database. We read NLI's entities from an XML file, and NLI's items (records) from their API.
+- **Wikimedia GUI** of the National Library of Israel's extensive Database.
+
+
+
 
 
 Getting Started
@@ -65,9 +68,22 @@ http://84.95.208.20:7474/browser/
 Project Structure
 -----------------
 
+The application uses the following two models to pull data from the NLI database and prepare it for the <a href="https://www.mediawiki.org/wiki/MediaWiki">Mediawiki</a> frontend.
+
+<img src="structure.png">
+
+By the time the project is deployed, Mediawiki has created its own database which the user interacts with.
+
+The database is divided into Authorities (ex:"David Ben Gurion") and Records (ex:"A Book written by David Ben Gurion"). 
+
+We read NLI's entities from an XML file, and NLI's items (records) from their API.
+
+
+
 | Name                               | Description                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
 | **app**/                           | This module crawls trough NLI's data and transforms it into linked data, stored in the DB (neo4j).                                                                                         |
+| **app**/__init__.py                | Helps render the page for MediaWiki                          |
 | **mediawiki**/                     | This module takes care of taking data from the DB (neo4j) and creating wiki pages in the mediawiki.                                                                                      |
 | **tests**/                         | Just tests                                                   |
 | **tests**/add_authorities.py       | Testing                                                      |
