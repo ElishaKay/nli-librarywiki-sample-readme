@@ -7,15 +7,13 @@ Screenshots:
 <img src="LibraryWiki-files.PNG">
 
 
-<h3>Install Dependencies via Pycharm IDE</h3>
 
-<img src="pycharm.png">
 
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Obtaining API Keys](#obtaining-api-keys)
-- [Deployment with Heroku](#deployment)
+- [Querying the Database](#querying-the-database)
+- [Project Structure](#project-structure) 
 - [License](#license)
 
 
@@ -24,53 +22,63 @@ Screenshots:
 Features
 --------
 
+
 - **Local Authentication** using Email and Password
 
 
 Getting Started
 ---------------
 
-The easiest way to get started is to clone the repository:
+The first steps is to make set up your local environment.
+
+1) Download python version 3.6.1
+
+https://www.python.org/downloads/
+
+2) Download Pycharm IDE
+
+https://www.jetbrains.com/pycharm/download/#section=windows
+
+3) Clone the repository and install the dependencies via Pycharm:
 
 ```bash
 # Get the latest snapshot
-git clone https://github.com/ElishaKay/Social-Site-with-6-Authentications.git
+git clone https://github.com/AdirShemesh/LibraryWiki/
 
-# Change directory
-cd myproject
+# Install Dependencies via Pycharm IDE
+
+<img src="pycharm.png">
+
+# Install Dependencies via Pycharm IDE
+
+
 
 ```
 
-**Note:** I highly recommend installing [Nodemon](https://github.com/remy/nodemon).
-
-
-Obtaining API Keys
-------------------
-
-To use any of the included APIs or OAuth authentication methods, you will need
- - *Secret Key* is your **clientSecret**
 
 <hr>
+
+Querying the Database
+---------------
+
+To query the database, navigate to:
+
+http://84.95.208.20:7474/browser/
+
+
+
 
 Project Structure
 -----------------
 
 | Name                               | Description                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
-| **app**/                           | text here                                                    |
-| **mediawiki**/                     | text here                                                    |
-| **tests**/                         | text here                                                    |
-| **tests**/add_authorities.py       | text here                                                    |
+| **app**/                           | This module crawls trough NLI's data and transforms it into linked data, stored in the DB (neo4j).                                                                                         |
+| **mediawiki**/                     | This module takes care of taking data from the DB (neo4j) and creating wiki pages in the mediawiki.                                                                                      |
+| **tests**/                         | Just tests                                                   |
+| **tests**/add_authorities.py       | Testing                                                      |
 
 
-**Note:** There is no preference how you name or structure your views.
+**Note:** lorem ipsum
 
 
-
-Deployment
-----------
-
-Once you are ready to deploy your app, you will need to create an account with
-
-
-### 1-Step Deployment with Heroku
