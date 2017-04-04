@@ -92,7 +92,7 @@ We read NLI's entities from an XML file, and NLI's items (records) from their AP
 | Name                               | Description                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
 | **app**/                           | This module crawls trough NLI's data and transforms it into linked data, stored in the DB (neo4j).                                                                                         |
-| **app**/_init_.py                | Helps render the page for MediaWiki                          |
+| **app**/init__.py                | Helps render the page for MediaWiki                          |
 | **app**/authorities.py             | Parses the authorities from the xml file                     |
 | **app**/db_comm.py                 | Batch process that parses the xml file and populates the database                       |
 | **app**/entity_iterators.py        | Entity iterators for obtaining information from the library API and from the neo4j database using pagination.                          |
