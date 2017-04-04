@@ -1,13 +1,10 @@
 Welcome friends to the Github Repo of NLI's librarywiki project.
 
+A live demo is available here: http://84.95.208.20:14180/index.php/000017959
+
 Screenshots:
 
-<h1>Project Structure</h1>
-
-<img src="LibraryWiki-files.PNG">
-
-
-
+<img src="ben-gurion.PNG">
 
 
 - [Features](#features)
@@ -77,6 +74,9 @@ Project Structure
 | **mediawiki**/                     | This module takes care of taking data from the DB (neo4j) and creating wiki pages in the mediawiki.                                                                                      |
 | **tests**/                         | Just tests                                                   |
 | **tests**/add_authorities.py       | Testing                                                      |
+
+
+<img src="LibraryWiki-files.PNG">
 
 
 **Note:** lorem ipsum
