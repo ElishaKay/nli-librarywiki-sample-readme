@@ -107,10 +107,3 @@ We read NLI's entities from an XML file, and NLI's items (records) from their AP
 | **mediawiki**/wiki.py              | Actual interaction with the mediawiki server.                              |
 | **tests**/                         | Just tests                                                   |
 
-
-<img src="LibraryWiki-files.PNG">
-
-
-**Note:** lorem ipsum
-
-
