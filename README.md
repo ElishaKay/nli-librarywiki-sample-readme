@@ -98,8 +98,7 @@ We read NLI's entities from an XML file, and NLI's items (records) from their AP
 | **app**/entity_iterators.py        | Entity iterators for obtaining information from the library API and from the neo4j database using pagination.                          |
 | **app**/node_entities.py           | Classes used when parsing the xml file.                        |
 | **app**/settings.py                | A few necessary constants                        |
-| **app**/subcategories.py           | infers a hierarchy of authorities based on the following subdivisions: Chronological, Geographical, Form, General                        |
-
+| **app**/subcategories.py           | Infers a hierarchy of authorities based on the following subdivisions: Chronological, Geographical, Form, General                        |
 | **mediawiki**/                     | This module takes care of taking data from the DB (neo4j) and creating wiki pages in the mediawiki.                                                                            |
 | **mediawiki**/crawl.py             | Extracts data from the neo4j Authority nodes, and and uses 'personality.py' to create the page via the mediawiki APIs. Currently, the code creates only authorities of 'Personality' type.                                |
 | **mediawiki**/crawl_records.py     | Extracts data from the neo4j Record nodes, and uses 'pages.py' to create the page via the mediawiki APIs.                                 |
