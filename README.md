@@ -1,10 +1,15 @@
-Welcome friends to the Github Repo with 6 User Login Options.
-
-The project is a trimmed-down version of a wonderful repo found here: https://github.com/sahat/hackathon-starter
+Welcome friends to the Github Repo of NLI's librarywiki project.
 
 Screenshots:
 
-<img src="signin.png">
+<h1>Project Structure</h1>
+
+<img src="LibraryWiki-files.PNG">
+
+
+<h3>Install Dependencies via Pycharm IDE</h3>
+
+<img src="pycharm.png">
 
 
 - [Features](#features)
@@ -12,6 +17,9 @@ Screenshots:
 - [Obtaining API Keys](#obtaining-api-keys)
 - [Deployment with Heroku](#deployment)
 - [License](#license)
+
+
+
 
 Features
 --------
