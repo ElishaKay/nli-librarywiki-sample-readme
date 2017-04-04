@@ -1,4 +1,4 @@
-Welcome friends to the Github Repo of NLI's librarywiki project.
+Welcome friends to the Github Repo of LibraryWiki project.
 
 A live demo is available here: http://84.95.208.20:14180/index.php/000017959
 
@@ -20,7 +20,7 @@ Features
 --------
 
 
-- **Local Authentication** using Email and Password
+- **Wikimedia GUI** of the National Library of Israel's extensive Database. We read NLI's entities from an XML file, and NLI's items (records) from their API.
 
 
 Getting Started
