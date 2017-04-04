@@ -94,13 +94,20 @@ We read NLI's entities from an XML file, and NLI's items (records) from their AP
 | **app**/                           | This module crawls trough NLI's data and transforms it into linked data, stored in the DB (neo4j).                                                                                         |
 | **app**/__init__.py                | Helps render the page for MediaWiki                          |
 | **app**/authorities.py             | Parses the authorities from the xml file                     |
-| **app**/db_comm.py                 | batch process that parses the xml file and populates the database                       |
-| **app**/__init__.py                | Helps render the page for MediaWiki                          |
-| **app**/__init__.py                | Helps render the page for MediaWiki                          |
+| **app**/db_comm.py                 | Batch process that parses the xml file and populates the database                       |
+| **app**/entity_iterators.py        | Entity iterators for obtaining information from the library API and from the neo4j database using pagination.                          |
+| **app**/node_entities.py           | Classes used when parsing the xml file.                        |
+| **app**/settings.py                | A few necessary constants                        |
+| **app**/subcategories.py           | infers a hierarchy of authorities based on the following subdivisions: Chronological, Geographical, Form, General                        |
 
-| **mediawiki**/                     | This module takes care of taking data from the DB (neo4j) and creating wiki pages in the mediawiki.                                                                                      |
+| **mediawiki**/                     | This module takes care of taking data from the DB (neo4j) and creating wiki pages in the mediawiki.                                                                            |
+| **mediawiki**/crawl.py             | Extracts data from the neo4j Authority nodes, and and uses 'personality.py' to create the page via the mediawiki APIs. Currently, the code creates only authorities of 'Personality' type.                                |
+| **mediawiki**/crawl_records.py     | Extracts data from the neo4j Record nodes, and uses 'pages.py' to create the page via the mediawiki APIs.                                 |
+| **mediawiki**/pages.py             | Implements the mediawiki syntax to create a wiki page for a Record.                              |
+| **mediawiki**/personality.py       | Implements the mediawiki syntax to create a wiki page for a Personality.                                 |
+| **mediawiki**/wiki.py              | Actual interaction with the mediawiki server.                              |
+
 | **tests**/                         | Just tests                                                   |
-| **tests**/add_authorities.py       | Testing                                                      |
 
 
 <img src="LibraryWiki-files.PNG">
