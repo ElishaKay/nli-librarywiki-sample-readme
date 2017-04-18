@@ -29,7 +29,7 @@ Features
 Getting Started
 ---------------
 
-The first steps is to make set up your local environment.
+The first step is to set up your local environment.
 
 1) Download python version 3.6.1
 
